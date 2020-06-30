@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1F9A2D24AB3AE90029030F /* mainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1F9A2C24AB3AE90029030F /* mainMenu.cpp */; };
 		AE6A8DD424A9637800E6BF3A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE6A8DD324A9637800E6BF3A /* main.cpp */; };
 		AE6A8DE024A9720600E6BF3A /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6A8DDB24A9720600E6BF3A /* libsfml-window.2.5.1.dylib */; };
 		AE6A8DE124A9720600E6BF3A /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6A8DDC24A9720600E6BF3A /* libsfml-graphics.2.5.1.dylib */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE1F9A2724AB3A920029030F /* mainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainMenu.h; sourceTree = "<group>"; };
+		AE1F9A2C24AB3AE90029030F /* mainMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mainMenu.cpp; sourceTree = "<group>"; };
 		AE6A8DD024A9637800E6BF3A /* PingPong */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PingPong; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6A8DD324A9637800E6BF3A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE6A8DDB24A9720600E6BF3A /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "3rdPartyLibs/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -35,7 +38,7 @@
 		AE6A8DDD24A9720600E6BF3A /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "3rdPartyLibs/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
 		AE6A8DDE24A9720600E6BF3A /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "3rdPartyLibs/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		AE6A8DDF24A9720600E6BF3A /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "3rdPartyLibs/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
-		AE6A8E0324AB2BF100E6BF3A /* game_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game_state.h; sourceTree = "<group>"; };
+		AE6A8E0324AB2BF100E6BF3A /* gameState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gameState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				AE6A8DD324A9637800E6BF3A /* main.cpp */,
-				AE6A8E0324AB2BF100E6BF3A /* game_state.h */,
+				AE1F9A2C24AB3AE90029030F /* mainMenu.cpp */,
+				AE1F9A2724AB3A920029030F /* mainMenu.h */,
+				AE6A8E0324AB2BF100E6BF3A /* gameState.h */,
 			);
 			path = PingPong;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE6A8DD424A9637800E6BF3A /* main.cpp in Sources */,
+				AE1F9A2D24AB3AE90029030F /* mainMenu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

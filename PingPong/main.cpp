@@ -10,15 +10,25 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
+#include "gameState.h"
+#include "mainMenu.h"
+//#include "mainMenu.cpp"
+
 #define SCREEN_WIDTH 2048
 #define SCREEN_HEIGHT 2048
 using namespace std;
+
+GameState coreState;
 int main()
 {
     /// This constructor creates the window with the size and pixel
     /// depth defined in \a mode
     
-    sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Awesome Game", sf::Style::Resize | sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Ping Pong", sf::Style::Resize | sf::Style::Close);
+    
+    coreState.setWindow(window);
+    coreState.setState(new MainMenu());
+    
     window.setFramerateLimit(60);
     sf::CircleShape(100.f);
     //shape.setFillColor(sf::Color::Green);
@@ -38,7 +48,12 @@ int main()
             }
         
         }
-        window.clear();
+        window.clear(sf::Color::Black);
+        
+        
+        coreState.Update();
+        coreState.Render();
+        
         window.display();
     }
     
