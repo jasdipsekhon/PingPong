@@ -1,2 +1,2 @@
 # PingPong
-A ping pong game writtent in SFML/C++.
+A ping pong game written in SFML/C++.
