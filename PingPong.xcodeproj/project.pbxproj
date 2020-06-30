@@ -35,6 +35,7 @@
 		AE6A8DDD24A9720600E6BF3A /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "3rdPartyLibs/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
 		AE6A8DDE24A9720600E6BF3A /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "3rdPartyLibs/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		AE6A8DDF24A9720600E6BF3A /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "3rdPartyLibs/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
+		AE6A8E0324AB2BF100E6BF3A /* game_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game_state.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6A8DD324A9637800E6BF3A /* main.cpp */,
+				AE6A8E0324AB2BF100E6BF3A /* game_state.h */,
 			);
 			path = PingPong;
 			sourceTree = "<group>";
