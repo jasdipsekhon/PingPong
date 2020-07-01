@@ -23,6 +23,8 @@ public:
 private:
     sf::Font* font;
     sf::Text* title;
+    sf::Text* play;
+    sf::Text* quit;
 };
 
 #endif /* mainMenu_h */
