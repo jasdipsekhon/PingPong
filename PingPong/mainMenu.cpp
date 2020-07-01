@@ -15,7 +15,12 @@ void MainMenu::Initialize(sf::RenderWindow* window)
 {
     this->selected = 0;
     this->font = new sf::Font();
-    this->font->loadFromFile("jasdipsekhon/Downloads/pianaforma/Pianaforma.ttf");
+    if (!this->font->loadFromFile("res/fonts/font.ttf"))
+    {
+        cout << "Error loading font file" << endl;
+        system("pause");
+    }
+    //this->font->loadFromFile("jasdipsekhon/Downloads/pianaforma/Pianaforma.ttf");
     
     
     this->title = new sf::Text("Ping Pong", *this->font, 256U);
