@@ -95,4 +95,5 @@ private:
 };
 
 extern GameState coreState;
+extern bool quitGame;
 #endif /* gameState_h */

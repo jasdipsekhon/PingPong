@@ -19,6 +19,7 @@
 using namespace std;
 
 GameState coreState;
+bool quitGame = false;
 int main()
 {
     /// This constructor creates the window with the size and pixel
@@ -55,6 +56,11 @@ int main()
         coreState.Render();
         
         window.display();
+        
+        if (quitGame)
+        {
+            window.close();
+        }
     }
     
     return 0;
